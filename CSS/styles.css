@@ -1,0 +1,182 @@
+body {
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-sponcers {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #a7323f;
+  border-radius: 30px;
+}
+
+.fix-me-facebook {
+  position: fixed;
+  top: 630px;
+  height: 30px;
+  width: 30px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1200px-Facebook_logo_36x36.svg.png);
+  background-size: contain;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.fix-me-instagram {
+  position: fixed;
+  top: 630px;
+  left: 30px;
+  height: 30px;
+  width: 30px;
+  background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square1-1024.png);
+  background-size: contain;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.fix-me-youtube {
+    position: fixed;
+    top: 630px;
+    left: 60px;
+    height: 30px;
+    width: 30px;
+    background-image: url(http://www.camelproductions.net/wp-content/uploads/2017/08/Youtube-logo-2017.jpg);
+    background-size: contain;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+.clr {
+  clear: both;
+}
+
+#sponcers-section {
+  background-color: #fff;
+}
+
+.block-photo {
+  float: left;
+  width: 16.6%;
+  padding: 40px;
+  /* la linea de abajo arregla las cajas que esten muy pegadas */
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.Auspiciadores {
+  background-color: #fff;
+}
+
+.Auspiciadores h2 {
+  text-align: center;
+  border-top: 1.5px #333 solid;
+  padding-top: 15px;
+  color: #a7323f;
+}
+
+#main-header {
+  margin-top: 15px;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  background-image: url(../PNG/Logo\ Oficial/ISA_marca-extendida-1color-horizontal-ROJO.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+#main-header a {
+  padding: 10px;
+  position: relative;
+}
+
+#navbar {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#navbar ul {
+  list-style: none;
+  word-spacing: 0.1em;
+  position: absolute;
+  top: center;
+  right: 1px;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#showcase {
+  width: 100%;
+  min-height: 475px;
+  margin-top: 8px;
+  position: relative;
+  background-image: url(../PNG/Banner\ Oficial/Banner-Oficial.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#main {
+  width: 80%;
+  margin: auto;
+}
+#main h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 0em;
+  word-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  line-height: 1em;
+  color: #a7323f;
+}
+
+#main h2 {
+  text-align: center;
+  letter-spacing: 0em;
+  word-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+#main p {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
