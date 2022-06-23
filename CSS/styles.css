@@ -71,6 +71,8 @@ body {
 
 #sponcers-section {
   background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .block-photo {
