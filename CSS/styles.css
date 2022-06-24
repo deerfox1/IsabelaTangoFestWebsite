@@ -130,14 +130,15 @@ body {
 }
 
 #showcase {
-  width: 100%;
-  min-height: 475px;
+  height: 306.172px;
+  width: auto;
+  border: 1px #333 solid;
   margin-top: 8px;
   position: relative;
   background-image: url(../PNG/Banner\ Oficial/Banner-Oficial.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 #main {
