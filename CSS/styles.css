@@ -13,16 +13,12 @@ body {
   overflow: hidden;
 }
 
-.container-sponcers {
-  background-color: #fff;
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
 .sponcer-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-top: 20px;
 }
 
 .button {
@@ -78,15 +74,6 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: center;
-}
-
-.block-photo {
-  float: left;
-  width: 16.6%;
-  padding: 40px;
-  /* la linea de abajo arregla las cajas que esten muy pegadas */
-  box-sizing: border-box;
-  background-color: #fff;
 }
 
 .Auspiciadores {
