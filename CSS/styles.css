@@ -20,6 +20,11 @@ body {
   overflow: hidden;
 }
 
+.sponcer-container {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   padding: 10px 15px;
   border: none;
@@ -54,16 +59,16 @@ body {
 }
 
 .fix-me-youtube {
-    position: fixed;
-    top: 630px;
-    left: 60px;
-    height: 30px;
-    width: 30px;
-    background-image: url(http://www.camelproductions.net/wp-content/uploads/2017/08/Youtube-logo-2017.jpg);
-    background-size: contain;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
+  position: fixed;
+  top: 630px;
+  left: 60px;
+  height: 30px;
+  width: 30px;
+  background-image: url(http://www.camelproductions.net/wp-content/uploads/2017/08/Youtube-logo-2017.jpg);
+  background-size: contain;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
 
 .clr {
   clear: both;
