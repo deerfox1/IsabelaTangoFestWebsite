@@ -46,7 +46,7 @@ body {
 .fix-me-instagram {
   position: fixed;
   top: 630px;
-  left: 30px;
+  left: 35px;
   height: 30px;
   width: 30px;
   background-image: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square1-1024.png);
@@ -58,7 +58,7 @@ body {
 .fix-me-youtube {
   position: fixed;
   top: 630px;
-  left: 60px;
+  left: 70px;
   height: 30px;
   width: 30px;
   background-image: url(http://www.camelproductions.net/wp-content/uploads/2017/08/Youtube-logo-2017.jpg);
@@ -130,9 +130,8 @@ body {
 }
 
 #showcase {
-  height: 306.172px;
+  height: 450px;
   width: auto;
-  border: 1px #333 solid;
   margin-top: 8px;
   position: relative;
   background-image: url(../PNG/Banner\ Oficial/Banner-Oficial.jpeg);
