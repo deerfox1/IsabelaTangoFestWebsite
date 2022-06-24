@@ -7,21 +7,6 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.sponcer-container {
-  display: flex;
-  justify-content: space-around;
-  box-sizing: border-box;
-  background-color: #fff;
-  padding-top: 20px;
-  overflow: hidden;
-}
-
 .button {
   padding: 10px 15px;
   border: none;
@@ -71,22 +56,38 @@ body {
   clear: both;
 }
 
-#sponcers-section {
-  background-color: #fff;
+.container-sponcers{
+  border-top: 1px solid black;
   display: flex;
   justify-content: center;
-}
-
-.Auspiciadores {
   background-color: #fff;
+  padding-bottom: 50px;
 }
 
-.Auspiciadores h2 {
-  text-align: center;
-  border-top: 1.5px #333 solid;
-  padding-top: 15px;
+.row{
+  width: 100%;
+  max-width: 900px;
+}
+
+.title-sponcers{
   color: #a7323f;
-  overflow: hidden;
+  text-transform: uppercase;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.box-sponcer{
+  width: 15%;
+  height: 100px;
+  margin: 5px;
+}  
+
+.box-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #main-header {
@@ -174,5 +175,4 @@ body {
   color: #fff;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
 }
