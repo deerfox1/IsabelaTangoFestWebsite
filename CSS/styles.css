@@ -94,17 +94,6 @@ body {
   justify-content: center;
 }
 
-.size-showcase {
-  position: absolute;
-  background-image: url(../PNG/Banner\ Oficial/Banner-Oficial.jpeg);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
 #main-header {
   margin-top: 15px;
   width: 100%;
@@ -146,14 +135,12 @@ body {
 }
 
 #showcase {
+  margin-top: 15px;
+}
+
+.showcase__banner-image{
   width: 100%;
-  height: 475px;
-  margin-top: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border: 1px green solid;
+  height: auto;
 }
 
 #main {
@@ -194,6 +181,24 @@ body {
 
 /* Small Phones, tablets, large smartphones */
 
-@media (max-width 728px){
+@media (max-width: 728px){
+  .row {
+    width: 100%;
+    max-width: 500px;
+    min-width: 430px;
+  }
 
+  .box-sponcer {
+    width: 25%;
+    height: 100px;
+    padding: 8px;
+    margin: 5px;
+  }
+  
+  .box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+  }
 }
