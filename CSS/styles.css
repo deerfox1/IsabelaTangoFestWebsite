@@ -211,18 +211,20 @@ p {
 
   .row{
     max-width: 500px;
-  }
-
-  .box-sponcer {
-    width: 12%;
-    height: auto;
-    margin: 10px;
-  }
-
-  .box-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-content: center;
+  }
+
+  .box-sponcer {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-wrapper {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0;
   }
 }
