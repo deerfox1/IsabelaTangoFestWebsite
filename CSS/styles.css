@@ -218,13 +218,17 @@ p {
   }
 
   .box-sponcer {
-    width: 100%;
-    height: auto;
+    width: 33.33%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);;
+    border-radius: 15px;
+    padding: 10px;
   }
 
   .box-wrapper {
-    max-width: 300px;
-    max-height: 300px;
+    width: 100%;
     margin: 0;
   }
 }
