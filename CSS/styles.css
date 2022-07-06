@@ -99,6 +99,7 @@ body {
   width: 15%;
   height: auto;
   margin: 10px;
+  transform: scale(1.3)
 }
 
 .box-wrapper {
@@ -222,12 +223,10 @@ p {
   }
 
   .box-sponcer {
-    width: 33.33%;
+    width: 33%;
     display: flex;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
     padding: 10px;
   }
 
