@@ -219,6 +219,10 @@ p {
   text-align: center;
 }
 
+.footer__row{
+  max-width: 750px;
+}
+
 .footer__link, .footer__link a{
   font-size: 16px;
   text-decoration: none;
