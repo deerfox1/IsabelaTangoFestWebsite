@@ -267,7 +267,7 @@ p {
   }
 
   .box-sponcer {
-    width: 33%;
+    width: 25%;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -277,5 +277,9 @@ p {
   .box-wrapper {
     width: 100%;
     margin: 0;
+  }
+
+  .footer__link--list{
+    padding: 0;
   }
 }
