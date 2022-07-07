@@ -239,6 +239,17 @@ p {
 .footer__copyright{
   font-size: 16px;
 }
+
+.footer__social__links{
+  display: flex;
+}
+
+.footer__social-media{
+  color: #fff;
+  padding: 0 8px;
+  font-size: 18px;
+}
+
 /* Small Phones, tablets, large smartphones */
 
 @media (max-width: 728px) {
