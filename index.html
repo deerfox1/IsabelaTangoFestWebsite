@@ -39,7 +39,13 @@
                   >Ruta Internacional del Tango</a
                 >
               </li>
-              <li><a class="button nav__links" href="./contact.html">Contactanos</a></li>
+              <li class="nav__link" onclick="toggleModal()">
+                <a
+                  href="#"
+                  class="button nav__links nav__link--anchor link__hover-effect link__hover-effect--black"
+                  >Contáctanos</a
+                >
+              </li>
             </ul>
           </div>
           <button class="button__menu" onclick="openMenu()">
@@ -62,8 +68,11 @@
               <li class="menu__link">
                 <a class="menu__link" href="">Programa</a>
               </li>
-              <li class="menu__link">
-                <a class="menu__link" href="./contact.html">Contactanos</a>
+              <li class="menu__link" onclick="toggleModal()">
+                  <a
+                    href="#"
+                    class="menu__link nav__link--anchor link__hover-effect link__hover-effect--black"
+                    >Contáctanos</a>
               </li>
               <li class="menu__link">
                 <a class="menu__link" href="./about-us.html">Sobre Nosotros</a>
@@ -78,6 +87,51 @@
           </div>
         </nav>
       </header>
+    </div>
+
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Isabela Tango Fest</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">VIVE EL TANGO EN EL CARIBE</h4>
+        <div class="modal__languages">
+          <figure class="modal__logo--img">
+            <img src="./PNG/Logo Oficial/ISA_marca-extendida-1color-horizontal-ROJO.png" alt="">
+            <span class="language__name">Isabela Tango Fest</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          ¡Escribínos en confianza!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          Estamos abierto a nuevas oportunidades.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Nombre</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Correo Electrónico</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Mensaje</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Enviar
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          ¡Gracias por escribir! Estaremos en contacto pronto.
+        </div>
+      </div>
     </div>
 
     <section id="showcase">
@@ -145,10 +199,7 @@
             class="box-sponcer"
             src="./PNG/Logo Oficial/LOGO OFICIAL GRUPO VISION copy.png"
           />
-          <img
-            class="box-sponcer"
-            src="./PNG/Logo Oficial/LogoPFJulio.png"
-          />
+          <img class="box-sponcer" src="./PNG/Logo Oficial/LogoPFJulio.png" />
           <img class="box-sponcer" src="./PNG/Logo Oficial/logo ruta.png" />
           <img
             class="box-sponcer"
