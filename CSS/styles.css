@@ -443,6 +443,7 @@ p {
 .modal__overlay--success {
   background-color: #4bb543;
   font-size: 40px;
+  line-height: 1.5em;
   font-weight: 700;
   text-align: center;
   padding: 28px;
