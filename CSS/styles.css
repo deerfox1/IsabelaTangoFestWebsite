@@ -283,6 +283,10 @@ p {
 
 /* About us Section */
 
+.about-us__para--list{
+  padding: 0 10px;
+}
+
 .about-us__para {
   display: flex;
   align-items: center;
@@ -294,7 +298,7 @@ p {
   padding-right: 32px;
   color: #a7323f;
   position: absolute;
-  left: 12px;
+  left: 8px;
 }
 .about-us__row{
   position: relative;
@@ -353,6 +357,12 @@ p {
 
   .footer__link--list {
     padding: 0;
+  }
+  .about-us__icon {
+    display: none;
+  }
+  #about-us ul{
+    padding: 0 10px;
   }
 }
 
