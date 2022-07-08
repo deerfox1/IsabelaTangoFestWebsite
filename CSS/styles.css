@@ -558,9 +558,6 @@ p {
   .footer__link--list {
     padding: 0;
   }
-  .about-us__icon {
-    display: none;
-  }
   #about-us ul {
     padding: 0 10px;
   }
@@ -576,6 +573,10 @@ p {
   .modal__half {
     width: 100%;
   }
+  .about-us__icon {
+    display: none !important;
+  }
+
 }
 
 /* SMALL PHONES LARGE TABLETS */
