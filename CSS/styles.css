@@ -513,7 +513,30 @@ p {
 
 /* Program Section */
 
+.row__program{
+  display: flex;
+  justify-content: space-around;
+}
 
+.program__date{
+  text-align: center;
+  font-size: 16px;
+  line-height: 3em;
+  margin-bottom: 32px;
+}
+
+.program__date--right{
+  border-left: 1px solid #555;
+}
+
+.row__program--main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.program__description{
+  padding: 0 16px;
+}
 
 /* Program Section */
 
@@ -582,6 +605,11 @@ p {
   }
   .about-us__icon {
     display: none !important;
+  }
+
+  .program__description{
+    font-size: 10px;
+    padding: 2px;
   }
 
 }
