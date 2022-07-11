@@ -616,6 +616,72 @@ p {
 
 /* Artist Section */
 
+/* RIT Section */
+
+.RIT__organization--list{
+  display: flex;
+}
+
+.RIT__organization--bullet{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.RIT__para{
+  text-align: left;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
+.RIT__icon{
+  font-size: 12px;
+}
+
+.RIT__signatures--img{
+  display: flex;
+  justify-content: center;
+}
+
+.RIT--img{
+  border-radius: 14px;
+}
+
+.RIT__directory{
+  border: #555 solid 1px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 18px;
+}
+
+.RIT__grid:not(:last-child){
+  border-bottom: #555 solid 1px;
+}
+
+.RIT__contact__section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RIT__contact__para{
+  text-align: left;
+}
+
+.RutadelTango_logo{
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: multiply;
+}
+
+.logo__RutadelTango{
+  display: flex;
+  justify-content: center;
+}
+
+/* RIT Section */
+
 /* Small Phones, tablets, large smartphones */
 
 @media (max-width: 877px) {

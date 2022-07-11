@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabela Tango Fest</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("0T3RRORStlG_3lzrt");
+      })();
+    </script>
+</head>
+<body>
+    <div class="container header__container">
+        <header id="main-header">
+          <nav id="navbar">
+            <div class="navbar__link--list">
+              <div></div>
+              <ul class="navbar__links">
+                <li>
+                  <a class="button nav__links" href="./index.html">Inicio</a>
+                </li>
+                <li>
+                  <a class="button nav__links" href="./about-us.html"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+                <li><a class="button nav__links" href="./program.html">Programa</a></li>
+                <li><a class="button nav__links" href="./artist.html">Artistas</a></li>
+                <li>
+                  <a class="button nav__links" href="./PT.html"
+                    >Peña del Tango de Isabela</a
+                  >
+                </li>
+                <li>
+                  <a class="button nav__links" href="#"
+                    >Ruta Internacional del Tango</a
+                  >
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                  <a
+                    href="#"
+                    class="button nav__links nav__link--anchor link__hover-effect link__hover-effect--black"
+                    >Contáctanos</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <button class="button__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button
+                class="button__menu button__menu--close"
+                onclick="closeMenu()"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__link">
+                  <a class="menu__link" href="./index.html">Inicio</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link" href="./artist.html">Artistas</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link" href="./program.html">Programa</a>
+                </li>
+                <li class="menu__link" onclick="toggleModal()">
+                  <a
+                    href="#"
+                    class="menu__link nav__link--anchor link__hover-effect link__hover-effect--black"
+                    onclick="closeMenu()"
+                    >Contáctanos</a
+                  >
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link" href="./about-us.html">Sobre Nosotros</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link" href="./PT.html">Peña del Tango de Isabela</a>
+                </li>
+                <li class="menu__link">
+                  <a class="menu__link" href="#">Ruta Internacional del Tango</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+  
+        <div class="modal">
+          <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">Isabela Tango Fest</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">VIVE EL TANGO EN EL CARIBE</h4>
+            <div class="modal__languages">
+              <figure class="modal__logo--img">
+                <img src="./PNG/Logo Oficial/ISA_marca-extendida-1color-horizontal-ROJO.png" alt="">
+                <span class="language__name">Isabela Tango Fest</span>
+              </figure>
+            </div>
+          </div>
+          <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            <h3 class="modal__title modal__title--contact">
+              ¡Escribínos en confianza!
+            </h3>
+            <h3 class="modal__sub-title modal__sub-title--contact">
+              Estamos abierto a nuevas oportunidades.
+            </h3>
+            <form id="contact__form" onsubmit="contact(event)">
+              <div class="form__item">
+                <label class="form__item--label">Nombre</label>
+                <input class="input" name="user_name" type="text" required></input>
+              </div>
+              <div class="form__item">
+                <label class="form__item--label">Correo Electrónico</label>
+                <input class="input" name="user_email" type="email" required></input>
+              </div>
+              <div class="form__item">
+                <label class="form__item--label">Mensaje</label>
+                <textarea class="input" name="message" type="text" required></textarea>
+              </div>
+              <button id="contact__submit" class="form__submit">
+                Enviar
+              </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+              <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+              ¡Gracias por escribir! Estaremos en contacto pronto.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <h1>Ruta Internacional del Tango</h1>
+            <p>
+                La Ruta Internacional del tango es una red de festivales y organizaciones tanto publicas como privadas. Estas mismas se encargan de fomentar y desarollar el tango de manera sin fines de lucro, permitiendo que cada una de sus líneas de acción tenga un espíritu colaborativo, basado en el respeto y buena fe. Fue fundado en la ciudad de Valparaíso, el dia 15 de febrero del 2014 en los salones de viña mar, ubicada en el valle de Casablanca chile, y formalizada con la firma de sus estatutos el 25 de julio del 2015 en el marco del trigésimo tercer Festival Nacional de Tango de la Ciudad de la Falda, fue fundada por las siguientes 6 organizaciones y festivales diferentes al rededor de Latinoamérica:
+            </p>
+            <div class="RIT__organization--list">
+                <ul class="RIT__organization--bullets">
+                    <li class="RIT__organization--bullet">
+                        <i class="fas fa-circle RIT__icon"></i>
+                        <p class="RIT__para" >Festival Nacional de Tango de la Falda Argentina</p>
+                    </li>
+                    <li class="RIT__organization--bullet">
+                        <i class="fas fa-circle RIT__icon"></i>
+                        <p class="RIT__para" >Festival Internacional Valparaíso Tango Chile</p>
+                    </li>
+                    <li class="RIT__organization--bullet">
+                        <i class="fas fa-circle RIT__icon"></i>
+                        <p class="RIT__para" >Festival Internacional Joventango de Montevideo Uruguay</p>
+                    </li>
+                </ul>
+                <ul class="RIT__organization--bullets">
+                    <li class="RIT__organization--bullet">
+                        <i class="fas fa-circle RIT__icon"></i>
+                        <p class="RIT__para" >Festival Internacional San Vicente Tango de Godoy Cruz Argentina</p>
+                    </li>
+                    <li class="RIT__organization--bullet">
+                        <i class="fas fa-circle RIT__icon"></i>
+                        <p class="RIT__para" >Corporación A Puro Tango de Medellín Colombia</p>
+                    </li>
+                    <li class="RIT__organization--bullet">
+                        <i class="fas fa-circle RIT__icon"></i>
+                        <p class="RIT__para" >Instituto de Arte de Junín Argentina</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="RIT__signatures--img">
+                <figure class="RIT__signature--img">
+                    <img class="RIT--img"  src="http://lafaldaciudadtango.gob.ar/img/rutaTango/rutaTangoFirma1.jpg" alt="">
+                    <p>Firma de creación y acuerdo el 15 de febrero 2014</p>
+                </figure>
+    
+                <figure class="RIT__signature--img">
+                    <img class="RIT--img" src="http://lafaldaciudadtango.gob.ar/img/rutaTango/rutaTangoFirma2.jpg" alt="">
+                    <p>Firma de creación y acuerdo el 15 de febrero 2014</p>
+                </figure>
+            </div>
+
+            <h2>Directorio</h2>
+
+            <div class="RIT__directory">
+
+                <div class="RIT__directory--left">
+
+                    <div class="RIT__grid">
+                        <h4>Cargo</h4>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Presidente</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Vicepresidente</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Director</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Subdirectora</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Secretaria</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Tesorero</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Encargados de imagen</p>
+                    </div>
+
+                </div>
+                <div class="RIT__directory--right">
+                   
+                    <div class="RIT__grid">
+                        <h4>Nombre</h4>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>	Lic. Eduardo Arduh</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Sergio Caceres Valdés</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Jorge Castro Muñoz</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Silvia Adriana Guzzo</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Adriana Enebu</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Carlos López</p>
+                    </div>
+                    <div class="RIT__grid">
+                        <p>Magdalena Gaim y Gabriel Gutiérrez</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Contacto</h2>
+
+            <div class="RIT__contact__section">
+                <p class="RIT__contact__para"> <span class="text__red">Email de contacto:</span> rutainternacionaltango@gmail.com</p>
+                <p class="RIT__contact__para" > <span class="text__red">WhatsApp de contacto:</span> +56995273622 - +59899110282</p>
+            </div>
+
+            <div class="logo__RutadelTango">
+            <figure>
+                <img class="RutadelTango_logo" src="./PNG/Logo Oficial/logo ruta.png" alt="">
+            </figure>
+            </div>
+
+        </div>
+      </div>
+
+      <footer id="main-footer">
+        <div class="container">
+          <div class="row footer__row">
+            <a class="home__footer--link" href="#">
+              <figure>
+                <img
+                  class="footer__logo--img"
+                  src="./PNG/Logo Oficial/ISA_marca-extendida-1color-horizontal-ROJO.png"
+                  alt=""
+                />
+              </figure>
+            </a>
+            <ul class="footer__link--list">
+              <li class="footer__link">
+                <a href="./index.html" rel="noopener noreferrer">Inicio</a>
+              </li>
+              <li class="footer__link">
+                <a href="./about-us.html" rel="noopener noreferrer">Sobre Nosotros</a>
+              </li>
+              <li class="footer__link">
+                <a href="./program.html" rel="noopener noreferrer">Programa</a>
+              </li>
+              <li class="footer__link">
+                <a href="./artist.html" rel="noopener noreferrer">Artistas</a>
+              </li>
+              <li class="footer__link">
+                <a href="./PT.html" rel="noopener noreferrer"
+                  >Peña del Tango de Isabela</a
+                >
+              </li>
+              <li class="footer__link">
+                <a href="#" rel="noopener noreferrer"
+                  >Ruta Internacional del Tango</a
+                >
+              </li>
+              <li class="footer__link" class="menu__link" onclick="toggleModal()">
+                  <a
+                    href="#"
+                    class="footer__link nav__link--anchor link__hover-effect link__hover-effect--black"
+                    onclick="closeMenu()"
+                    >Contáctanos
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">Copyright &copy; 2022 Isabela Tango Fest</p>
+        <div class="footer__social__links">
+          <a
+            class="footer__social-media"
+            href="https://www.facebook.com/isabelatangofest"
+            target="_blank"
+          >
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a
+            class="footer__social-media"
+            href="https://www.instagram.com/isabelatangofest/"
+            target="_blank"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a
+            class="footer__social-media"
+            href="https://www.youtube.com/channel/UCIu9kSqq1AEDGskZ9CtaihA/videos"
+            target="_blank"
+          >
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+          </a>
+        </div>
+      </footer>
+</body>
+</html>
