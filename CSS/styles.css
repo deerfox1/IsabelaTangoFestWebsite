@@ -494,7 +494,7 @@ p {
 .about-us__icon {
   font-size: 25px;
   padding-right: 32px;
-  color: #333;
+  color: #555555;
   position: absolute;
   left: 8px;
 }
@@ -504,9 +504,9 @@ p {
 
 .about-us__identidad__unica {
   padding: 24px;
-  border: 2px solid #000;
+  border: 2px solid #333;
   color: #fff;
-  background-color: #333;
+  background-color: #555555;
 }
 
 /* About us Section */
