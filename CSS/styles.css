@@ -492,9 +492,9 @@ p {
 }
 
 .about-us__icon {
-  font-size: 50px;
+  font-size: 25px;
   padding-right: 32px;
-  color: #a7323f;
+  color: #333;
   position: absolute;
   left: 8px;
 }
@@ -510,6 +510,13 @@ p {
 }
 
 /* About us Section */
+
+/* Program Section */
+
+
+
+/* Program Section */
+
 
 /* Small Phones, tablets, large smartphones */
 
