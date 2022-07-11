@@ -552,11 +552,13 @@ p {
 .artist__conduction {
   display: flex;
   justify-content: center;
+  animation: fade-up 650ms 400ms backwards;
 }
 
 .artist__program {
   display: flex;
   justify-content: space-around;
+  animation: fade-up 650ms 400ms backwards;
 }
 
 .artist__conductors--img-text {
@@ -584,27 +586,39 @@ p {
   box-shadow: 0 8px 16px rgb(0 0 0 / 56%);
 }
 
-.conductor__image--img{
+.conductor__image--img {
   width: 100%;
   transform: scale(1.75);
   margin-top: 40px;
   margin-left: 28px;
 }
 
-.program__image--img{
+.program__image--img {
   width: 100%;
   transform: scale(1);
 }
 
-.artist__image:hover{
+.artist__image:hover {
   border: #a7323f solid 3px;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Artist Section */
 
 /* Small Phones, tablets, large smartphones */
 
-@media (max-width: 728px) {
+@media (max-width: 877px) {
   nav {
     height: 60px;
   }
