@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+.text__red {
+  color: #a7323f;
+}
+
 body {
   background-color: #f4f4f4;
   color: #555;
@@ -106,7 +110,6 @@ body {
 }
 
 #navbar ul {
-  padding: 0 32px;
   list-style: none;
   word-spacing: 0.1em;
   top: center;
@@ -323,7 +326,7 @@ p {
   transform: translateX(-110%);
 }
 
-.modal__languages img{
+.modal__languages img {
   width: 200px;
   padding-right: 18px;
 }
@@ -382,13 +385,13 @@ p {
   text-align: center;
 }
 
-#contact__form{
+#contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.form__item{
+.form__item {
   max-width: 160px;
 }
 
@@ -402,8 +405,8 @@ p {
 }
 
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: #a7323f;
+  border: 2px solid #a73233;
   color: white;
   font-weight: 700;
   width: 100%;
@@ -419,8 +422,8 @@ p {
 }
 
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: #a7323f;
+  color: #a73233;
 }
 
 .modal__overlay {
@@ -513,33 +516,91 @@ p {
 
 /* Program Section */
 
-.row__program{
+.row__program {
   display: flex;
   justify-content: space-around;
 }
 
-.program__date{
+.program__date {
   text-align: center;
   font-size: 16px;
   line-height: 3em;
   margin-bottom: 32px;
 }
 
-.program__date--right{
+.program__date--right {
   border-left: 1px solid #555;
 }
 
-.row__program--main{
+.row__program--main {
   display: flex;
   justify-content: space-around;
 }
 
-.program__description{
+.program__description {
   padding: 0 16px;
 }
 
 /* Program Section */
 
+/* Artist Section */
+
+.artist__title--section {
+  text-align: center;
+}
+
+.artist__conduction {
+  display: flex;
+  justify-content: center;
+}
+
+.artist__program {
+  display: flex;
+  justify-content: space-around;
+}
+
+.artist__conductors--img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.artist__program--img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.artist__image {
+  border: #555 solid 2px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 50%;
+  transition: all 300ms ease;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 56%);
+}
+
+.conductor__image--img{
+  width: 100%;
+  transform: scale(1.75);
+  margin-top: 40px;
+  margin-left: 28px;
+}
+
+.program__image--img{
+  width: 100%;
+  transform: scale(1);
+}
+
+.artist__image:hover{
+  border: #a7323f solid 3px;
+}
+
+/* Artist Section */
 
 /* Small Phones, tablets, large smartphones */
 
@@ -607,11 +668,10 @@ p {
     display: none !important;
   }
 
-  .program__description{
+  .program__description {
     font-size: 10px;
     padding: 2px;
   }
-
 }
 
 /* SMALL PHONES LARGE TABLETS */
