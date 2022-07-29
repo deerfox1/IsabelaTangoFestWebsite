@@ -53,8 +53,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #fff;
-  padding-bottom: 50px;
-  min-height: 600px;
+  min-height: 450px;
 }
 
 .row {
@@ -330,8 +329,8 @@ body {
 }
 
 .showcase__banner--video {
-  min-width: 100%;
-  bottom: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 #main {
@@ -909,6 +908,11 @@ p {
     font-size: 10px;
     padding: 2px;
   }
+
+  .box-wrapper__index img{
+    width: 150px;
+  }
+
 }
 
 /* SMALL PHONES LARGE TABLETS */
