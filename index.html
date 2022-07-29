@@ -57,43 +57,45 @@
           <button class="button__menu" onclick="openMenu()">
             <i class="fas fa-bars"></i>
           </button>
-          <div class="menu__backdrop">
-            <button
-              class="button__menu button__menu--close"
-              onclick="closeMenu()"
-            >
-              <i class="fas fa-times"></i>
-            </button>
-            <ul class="menu__links">
-              <li class="menu__link">
-                <a class="menu__link" href="#">Inicio</a>
-              </li>
-              <li class="menu__link">
-                <a class="menu__link" href="./artist.html">Artistas</a>
-              </li>
-              <li class="menu__link">
-                <a class="menu__link" href="./program.html">Programa</a>
-              </li>
-              <li class="menu__link" onclick="toggleModal()">
-                  <a
-                    href="#"
-                    class="menu__link nav__link--anchor link__hover-effect link__hover-effect--black"
-                    onclick="closeMenu()"
-                    >Contáctanos</a>
-              </li>
-              <li class="menu__link">
-                <a class="menu__link" href="./about-us.html">Sobre Nosotros</a>
-              </li>
-              <li class="menu__link">
-                <a class="menu__link" href="./PT.html">Peña del Tango de Isabela</a>
-              </li>
-              <li class="menu__link">
-                <a class="menu__link" href="./RIT.html">Ruta Internacional del Tango</a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </header>
+    </div>
+    <div class="menu__container">
+      <div class="menu__backdrop">
+        <button
+          class="button__menu button__menu--close"
+          onclick="closeMenu()"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__link">
+            <a class="menu__link" href="#">Inicio</a>
+          </li>
+          <li class="menu__link">
+            <a class="menu__link" href="./artist.html">Artistas</a>
+          </li>
+          <li class="menu__link">
+            <a class="menu__link" href="./program.html">Programa</a>
+          </li>
+          <li class="menu__link" onclick="toggleModal()">
+              <a
+                href="#"
+                class="menu__link nav__link--anchor link__hover-effect link__hover-effect--black"
+                onclick="closeMenu()"
+                >Contáctanos</a>
+          </li>
+          <li class="menu__link">
+            <a class="menu__link" href="./about-us.html">Sobre Nosotros</a>
+          </li>
+          <li class="menu__link">
+            <a class="menu__link" href="./PT.html">Peña del Tango de Isabela</a>
+          </li>
+          <li class="menu__link">
+            <a class="menu__link" href="./RIT.html">Ruta Internacional del Tango</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="modal">
@@ -142,89 +144,81 @@
     </div>
 
     <section id="showcase">
-      <div>
-        <img
-          class="showcase__banner-image"
-          src="./PNG/Banner Oficial/Banner-Oficial.jpeg"
-          alt=""
-        />
-      </div>
+        <video preload autoplay muted loop poster="./PNG/Banner Oficial/Banner-Oficial.jpeg" class="showcase__banner--video">
+          <source src="./PNG/Index-Photos:videos/IsabelaTangoFestVideo.mp4" type="video/mp4">
+        </video>
     </section>
 
     <div class="container">
       <section id="main">
-        <h1>vive el tango en el caribe</h1>
-        <h2>Una propuesta multiexperiencial para cualquier visitante</h2>
-        <p>
-          Nuestro festival tiene la tarea de promover y exponer a nivel local e
-          internacional el tango en todas sus facetas. Por eso, integra
-          diferentes propuestas: Exposiciones de artes plasticas, expocisiones
-          de materiales de colección, exhibiciones de artesanías, conferencias,
-          clases de tango, milongas, expectaculos, presetación de películas,
-          gastronomía, presentación de libros y discos, ect.
-        </p>
-        <h2>25° EDICIÓN</h2>
-        <p>
-          Con más de 2500 espectadores por edición, este año el international
-          isabela fest cuenta con artistas de lujo de todo el mundo. ya
-          confirmaron su presencia artistas de italia, argentina, r.o. del
-          uruguay, aruba, colombia, estados unidos y puerto rico. serán dos
-          jornadas en las que isabela se convertirá en el centro de atención de
-          medios de comunicación, artistas, comerciantes y turistas que llegan
-          atraídos por la sensualidad del tango. es la oportunidad para que su
-          marca sea vista por puerto rico y el mundo a través del festival que
-          año a año va sumando adeptos, convirtiéndose en una excelente vitrina.
-          para nosotros, será un gran honor tenerlo como patrocinador en esta
-          25° edición.
-        </p>
+        <a href="./vive-caribe.html" class="button main__index--button">
+          vive el tango en el caribe
+        </a>
+        <img class="main--img" src="./PNG/Index-Photos:videos/CopiadePlaza.png" alt="">
       </section>
     </div>
 
     <div class="container-sponcers">
-      <div class="row">
+      <div class="row row-sponcer">
         <div class="title-sponcers">
-          <h1>Auspiciadores:</h1>
+          <h1>Auspiciadores 2022</h1>
         </div>
-        <div class="box-wrapper">
+        <div class="box-wrapper__index">
           <img
+            id="gt__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/GT_marca-extendida-NEGRO (512X512).png"
           />
           <img
+            id="academia__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/logo academia alta resolucion.png"
           />
           <img
+            id="asi__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/Logo ASI Group.png"
           />
           <img
+            id="hyundai__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/Logo Hyundai Isabela.png"
           />
           <img
+            id="vision__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/LOGO OFICIAL GRUPO VISION copy.png"
           />
-          <img class="box-sponcer" src="./PNG/Logo Oficial/LogoPFJulio.png" />
-          <img class="box-sponcer" src="./PNG/Logo Oficial/logo ruta.png" />
+          <img 
+            id="julio__logo"
+            class="box-sponcer" 
+            src="./PNG/Logo Oficial/LogoPFJulio.png" />
+          <img 
+            id="ruta__logo"
+            class="box-sponcer" 
+            src="./PNG/Logo Oficial/logo ruta.png" />
           <img
+            id="selectos__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/Logo Selectos Isabela.png"
           />
           <img
+            id="top__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/Logo TOP RADIO 98.1 ISABELA.png"
           />
           <img
+            id="prestige__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/Logo_Prestige_Metal.png"
           />
           <img
+            id="isabela__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/NUEVO LOGO ISABELA-1.png"
           />
           <img
+            id="pearch__logo"
             class="box-sponcer"
             src="./PNG/Logo Oficial/THE PERCH hotel,ISABELA.png"
           />
